@@ -1,0 +1,12 @@
+{
+  "name": "火水相談｜夫婦のすれ違い実例集",
+  "short_name": "火水相談",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    { "src": "192ks.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "512ks.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
