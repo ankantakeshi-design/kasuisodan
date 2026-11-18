@@ -25,18 +25,17 @@
   * { box-sizing: border-box; }
   body { font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif; background:#fff; color:#2b2b2b; margin:0; padding:0 16px 48px; }
   .wrap { max-width: 680px; margin: 0 auto; }
-  header { text-align:center; padding: 28px 0 4px; }
-  header img.mark { width: 84px; height: 84px; border-radius: 50%; }
-  h1 { font-size: 32px; font-weight: 900; margin: 10px 0 2px; }
+  header { text-align:center; padding: 22px 0 0; }
+  header img.mark { width: 56px; height: 56px; border-radius: 50%; }
+  h1 { font-size: 27px; font-weight: 900; margin: 6px 0 0; }
   h1 .hi { color:#ff7a59; } h1 .mizu { color:#4a90d9; }
-  .subtitle { font-size: 18px; font-weight: 700; color:#e2543e; margin: 0 0 6px; }
-  .lead { line-height: 1.9; font-size: 15px; color:#555; margin: 6px 0 0; }
-  img.hero { width: 100%; max-width: 460px; display:block; margin: 10px auto 4px; }
-  .search { margin: 18px 0 6px; }
-  .search input { width: 100%; font-family: inherit; font-size: 16px; font-weight: 700; padding: 14px 18px; border: 3px solid #ffd9cf; border-radius: 999px; outline: none; background: #fffafa; }
+  .subtitle { font-size: 15px; font-weight: 700; color:#e2543e; margin: 2px 0 0; }
+  .try { text-align:center; font-size: 17px; font-weight: 900; line-height: 1.7; margin: 20px 0 0; }
+  .search { margin: 12px 0 6px; }
+  .search input { width: 100%; font-family: inherit; font-size: 17px; font-weight: 700; padding: 16px 20px; border: 3px solid #ffd9cf; border-radius: 999px; outline: none; background: #fffafa; }
   .search input:focus { border-color:#ff7a59; }
-  .count { text-align:center; font-size: 13px; color:#999; margin: 8px 0 14px; font-weight: 700; }
-  .case { display:block; text-decoration:none; color:#2b2b2b; border: 2px solid #f0e6df; border-radius: 20px; padding: 18px 20px; margin: 0 0 14px; background:#fff; box-shadow: 0 3px 0 #f5ece5; }
+  .count { text-align:center; font-size: 13px; color:#999; margin: 8px 0 16px; font-weight: 700; }
+  .case { display:block; text-decoration:none; color:#2b2b2b; border: 2px solid #f0e6df; border-radius: 20px; padding: 18px 20px; margin: 0 0 16px; background:#fff; box-shadow: 0 3px 0 #f5ece5; }
   .case:active { transform: translateY(2px); box-shadow: none; }
   .case .num { display:inline-block; background: linear-gradient(90deg,#ff7a59,#4a90d9); color:#fff; font-weight:900; font-size: 13px; padding: 3px 12px; border-radius: 999px; }
   .case h2 { font-size: 19px; font-weight: 900; margin: 10px 0 6px; line-height: 1.5; }
@@ -45,7 +44,11 @@
   .tags span.fire { background:#fff0ea; color:#e2543e; }
   .case .go { font-weight: 900; color:#e2543e; font-size: 14px; margin-top: 8px; }
   .empty { display:none; text-align:center; color:#999; font-weight:700; padding: 18px 0; }
-  .links { margin-top: 30px; text-align:center; }
+  .about { margin-top: 44px; text-align:center; }
+  .about h3 { font-size: 17px; font-weight: 900; margin: 0 0 10px; }
+  .about p { line-height: 1.9; font-size: 15px; color:#555; margin: 0; }
+  img.hero { width: 100%; max-width: 460px; display:block; margin: 16px auto 0; }
+  .links { margin-top: 36px; text-align:center; }
   .links h3 { font-size: 17px; font-weight: 900; margin: 0 0 12px; }
   a.btn { display:inline-block; margin: 5px; padding: 12px 22px; border-radius: 999px; background:#ff7a59; color:#fff; text-decoration:none; font-weight:900; font-size: 15px; }
   a.btn.blue { background:#4a90d9; }
@@ -59,10 +62,9 @@
     <img class="mark" src="512ks.png" alt="火水のマーク">
     <h1><span class="hi">火</span><span class="mizu">水</span>相談</h1>
     <p class="subtitle">夫婦のすれ違い実例集</p>
-    <p class="lead">夫婦のすれ違いを、火水性質分析で読み解く実例集です。<br>気になる場面を、言葉で検索できます。</p>
-    <img class="hero" src="hero.png" alt="本を一緒に読む二人と、火と水のキャラクター">
   </header>
 
+  <p class="try">気になる場面を、言葉で探せます。</p>
   <div class="search">
     <input type="search" id="q" placeholder="🔍 たとえば「聞いてない」「疲れた」" aria-label="実例を検索">
   </div>
@@ -106,6 +108,12 @@
     </a>
     <p class="empty" id="empty">見つかりませんでした。別の言葉で試してみてください。</p>
   </main>
+
+  <section class="about">
+    <h3>このサイトについて</h3>
+    <p>夫婦のすれ違いを、火水性質分析で読み解く実例集です。<br>相談の場面と、たけちゃんの答えを載せています。実例は毎日追加中です。</p>
+    <img class="hero" src="hero.png" alt="本を一緒に読む二人と、火と水のキャラクター">
+  </section>
 
   <section class="links">
     <h3>あわせて、こちらも</h3>
