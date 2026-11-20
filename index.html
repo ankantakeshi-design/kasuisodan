@@ -56,6 +56,18 @@
   a.btn.grey { background:#6E6E6E; }
   footer { text-align:center; margin-top: 36px; font-weight: 900; color:#767676; font-size: 14px; }
 </style>
+<style>
+/* FAQ（よくある質問） */
+.faq-sec{margin:48px auto 0;text-align:left;}
+.faq-sec>h2{font-size:14px;font-weight:700;letter-spacing:.1em;text-align:center;margin:0 0 10px;color:#767676;}
+.faq-item{border-top:1px solid #e5e5e5;}
+.faq-item:last-child{border-bottom:1px solid #e5e5e5;}
+.faq-item summary{cursor:pointer;list-style:none;padding:15px 26px 15px 4px;font-size:15px;font-weight:700;line-height:1.6;position:relative;color:#2b2b2b;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:"＋";position:absolute;right:6px;top:15px;font-size:13px;color:#767676;font-weight:400;}
+.faq-item[open ] summary::after{content:"−";}
+.faq-a{padding:2px 4px 18px;font-size:15px;line-height:1.9;color:#2b2b2b;}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -125,7 +137,16 @@
     <a class="btn grey" href="https://sintaichoseijyuku.pages.dev/">心体調整塾ホームページ</a>
   </section>
 
-  <footer>心体調整塾 たけちゃん</footer>
+    <section class="faq-sec" aria-label="よくある質問">
+  <h2>よくある質問</h2>
+  <details class="faq-item"><summary>火水相談は、どんなサイトですか？</summary><div class="faq-a">夫婦のすれ違いを、火水性質分析で読み解く実例集です。「言った、聞いてない」「『聞いてるって！』が伝わらない」といった具体的な場面ごとに、相談の場面と、たけちゃんの答えを載せています。気になる場面を、言葉で探せる辞典のようなサイトです。</div></details>
+  <details class="faq-item"><summary>実例は、どうやって探せますか？</summary><div class="faq-a">トップの検索窓に、気になる言葉（「疲れた」「手伝う」など）を入れると、関係する実例が絞り込めます。各実例にはキーワードも付いているので、似た場面から探すこともできます。</div></details>
+  <details class="faq-item"><summary>実例の全文は、どこで読めますか？</summary><div class="faq-a">各実例の「noteで読む」から、noteの記事で全文を読めます。このサイトは実例を引くための入口で、くわしい読み解きと具体的な対処は、noteの記事に書いています。</div></details>
+  <details class="faq-item"><summary>実例は、増えていきますか？</summary><div class="faq-a">増えていきます。実例は毎日追加中です。新しい夫婦のすれ違いの場面を取り上げて、火水の読み解きと具体的な対処を、1つずつ書き足しています。</div></details>
+  <details class="faq-item"><summary>火水性質分析とは、何ですか？</summary><div class="faq-a">人の中にある「火（考える・改善する）」と「水（感じる・察する）」の性質のちがいから、夫婦のすれ違いを読み解く考え方です。火と水はもとは同じもので、一人の中に両方あり、時期によって表に出る側が変わります。くわしくは、火水性質診断（無料）や、心体調整塾ホームページで紹介しています。</div></details>
+  <details class="faq-item"><summary>誰が書いていますか？</summary><div class="faq-a">心体調整塾の、たけちゃんです。真逆の性質の夫婦が、結婚15年かけて実践・研究してきた経験をもとに書いています。</div></details>
+  </section>
+<footer>心体調整塾 たけちゃん</footer>
 </div>
 <script>
   var q = document.getElementById('q');
@@ -145,6 +166,62 @@
   }
   q.addEventListener('input', render);
   render();
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "火水相談は、どんなサイトですか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "夫婦のすれ違いを、火水性質分析で読み解く実例集です。「言った、聞いてない」「『聞いてるって！』が伝わらない」といった具体的な場面ごとに、相談の場面と、たけちゃんの答えを載せています。気になる場面を、言葉で探せる辞典のようなサイトです。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "実例は、どうやって探せますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "トップの検索窓に、気になる言葉（「疲れた」「手伝う」など）を入れると、関係する実例が絞り込めます。各実例にはキーワードも付いているので、似た場面から探すこともできます。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "実例の全文は、どこで読めますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "各実例の「noteで読む」から、noteの記事で全文を読めます。このサイトは実例を引くための入口で、くわしい読み解きと具体的な対処は、noteの記事に書いています。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "実例は、増えていきますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "増えていきます。実例は毎日追加中です。新しい夫婦のすれ違いの場面を取り上げて、火水の読み解きと具体的な対処を、1つずつ書き足しています。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "火水性質分析とは、何ですか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "人の中にある「火（考える・改善する）」と「水（感じる・察する）」の性質のちがいから、夫婦のすれ違いを読み解く考え方です。火と水はもとは同じもので、一人の中に両方あり、時期によって表に出る側が変わります。くわしくは、火水性質診断（無料）や、心体調整塾ホームページで紹介しています。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "誰が書いていますか？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "心体調整塾の、たけちゃんです。真逆の性質の夫婦が、結婚15年かけて実践・研究してきた経験をもとに書いています。"
+   }
+  }
+ ]
+}
 </script>
 </body>
 </html>
