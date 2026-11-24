@@ -68,6 +68,12 @@
 .faq-item summary::after{content:"＋";position:absolute;right:6px;top:15px;font-size:13px;color:#767676;font-weight:400;}
 .faq-item[open ] summary::after{content:"−";}
 .faq-a{padding:2px 4px 18px;font-size:15px;line-height:1.9;color:#2b2b2b;}
+.faq-outer{border:2px solid #e5e5e5;border-radius:14px;background:#fafafa;overflow:hidden;}
+.faq-outer>summary{cursor:pointer;list-style:none;min-height:56px;display:flex;align-items:center;justify-content:center;padding:12px 16px;font-size:17px;font-weight:800;color:#2b2b2b;}
+.faq-outer>summary::-webkit-details-marker{display:none;}
+.faq-outer>summary::after{content:"▽";margin-left:10px;font-size:14px;color:#767676;}
+.faq-outer[open ]>summary::after{content:"△";}
+.faq-inner{padding:2px 14px 14px;}
 </style>
 <script type="application/ld+json">
 {
@@ -191,14 +197,18 @@
   </section>
 
     <section class="faq-sec" aria-label="よくある質問">
-  <h2>よくある質問</h2>
+  <details class="faq-outer">
+  <summary>よくある質問</summary>
+  <div class="faq-inner">
   <details class="faq-item"><summary>火水相談は、どんなサイトですか？</summary><div class="faq-a">夫婦のすれ違いを、火水性質分析で読み解く実例集です。「言った、聞いてない」「『聞いてるって！』が伝わらない」といった具体的な場面ごとに、相談の場面と、たけちゃんの答えを載せています。気になる場面を、言葉で探せる辞典のようなサイトです。</div></details>
   <details class="faq-item"><summary>実例は、どうやって探せますか？</summary><div class="faq-a">トップの検索窓に、気になる言葉（「疲れた」「手伝う」など）を入れると、関係する実例が絞り込めます。各実例にはキーワードも付いているので、似た場面から探すこともできます。</div></details>
   <details class="faq-item"><summary>実例の全文は、どこで読めますか？</summary><div class="faq-a">各実例の「noteで読む」から、noteの記事で全文を読めます。このサイトは実例を引くための入口で、くわしい読み解きと具体的な対処は、noteの記事に書いています。</div></details>
   <details class="faq-item"><summary>実例は、増えていきますか？</summary><div class="faq-a">増えていきます。実例は毎日追加中です。新しい夫婦のすれ違いの場面を取り上げて、火水の読み解きと具体的な対処を、1つずつ書き足しています。</div></details>
   <details class="faq-item"><summary>火水性質分析とは、何ですか？</summary><div class="faq-a">人の中にある「火（考える・改善する）」と「水（感じる・察する）」の性質のちがいから、夫婦のすれ違いを読み解く考え方です。火と水はもとは同じもので、一人の中に両方あり、時期によって表に出る側が変わります。くわしくは、火水性質診断（無料）や、心体調整塾ホームページで紹介しています。</div></details>
   <details class="faq-item"><summary>誰が書いていますか？</summary><div class="faq-a">心体調整塾の、たけちゃんです。真逆の性質の夫婦が、結婚15年かけて実践・研究してきた経験をもとに書いています。</div></details>
-  </section>
+    </div>
+  </details>
+</section>
 <footer>心体調整塾 たけちゃん</footer>
 </div>
 <script>
