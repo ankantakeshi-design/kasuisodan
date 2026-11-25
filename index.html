@@ -77,6 +77,10 @@
 
   /* 隙間を詰める（2026-11-25） */
   .faq-sec{ margin-top:10px; }
+
+  /* バーの小さな絵（2026-11-25） */
+  .faq-outer > summary img.bar-thumb{ width:40px; height:40px; object-fit:cover; border-radius:10px; margin-right:10px; flex:none; }
+  .faq-outer .faq-inner{ padding:6px 14px 14px; }
 </style>
 <script type="application/ld+json">
 {
@@ -184,13 +188,9 @@
     <p class="empty" id="empty">見つかりませんでした。別の言葉で試してみてください。</p>
   </main>
 
-  <section class="about">
-    <h3>このサイトについて</h3>
-    <p>夫婦のすれ違いを、火水性質分析で読み解く実例集です。<br>相談の場面と、たけちゃんの答えを載せています。実例は毎日追加中です。</p>
-    <img class="hero" src="hero.webp" width="920" height="613" alt="本を一緒に読む二人と、火と水のキャラクター">
-  </section>
+  <section class="about faq-sec"><details class="faq-outer"><summary><img class="bar-thumb" src="hero.webp" alt="">このサイトについて</summary><div class="faq-inner"><p>夫婦のすれ違いを、火水性質分析で読み解く実例集です。<br>相談の場面と、たけちゃんの答えを載せています。実例は毎日追加中です。</p> <img class="hero" src="hero.webp" width="920" height="613" alt="本を一緒に読む二人と、火と水のキャラクター" loading="lazy"> </div></details></section>
 
-  <section class="links faq-sec" aria-label="あわせて、こちらも"><details class="faq-outer"><summary>あわせて、こちらも</summary><div class="faq-inner">
+  <section class="links faq-sec" aria-label="あわせて、こちらも"><details class="faq-outer"><summary><img class="bar-thumb" src="buddy-flame.png" alt="">あわせて、こちらも</summary><div class="faq-inner">
     <a class="btn blue" href="https://kamisindan.pages.dev/">🔥 火水性質診断（無料）</a>
     <a class="btn blue" href="https://kamimikuji.pages.dev/">🎴 火水おみくじ</a><br>
     <a class="btn" href="https://note.com/takekasui/m/m3bf921771ab4">📖 実例集マガジン（note）</a>
