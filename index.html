@@ -74,6 +74,9 @@
 .faq-outer>summary::after{content:"▽";margin-left:10px;font-size:14px;color:#767676;}
 .faq-outer[open ]>summary::after{content:"△";}
 .faq-inner{padding:2px 14px 14px;}
+
+  /* 隙間を詰める（2026-11-25） */
+  .faq-sec{ margin-top:10px; }
 </style>
 <script type="application/ld+json">
 {
@@ -187,16 +190,14 @@
     <img class="hero" src="hero.webp" width="920" height="613" alt="本を一緒に読む二人と、火と水のキャラクター">
   </section>
 
-  <section class="links">
-    <h3>あわせて、こちらも</h3>
+  <section class="links faq-sec" aria-label="あわせて、こちらも"><details class="faq-outer"><summary>あわせて、こちらも</summary><div class="faq-inner">
     <a class="btn blue" href="https://kamisindan.pages.dev/">🔥 火水性質診断（無料）</a>
     <a class="btn blue" href="https://kamimikuji.pages.dev/">🎴 火水おみくじ</a><br>
     <a class="btn" href="https://note.com/takekasui/m/m3bf921771ab4">📖 実例集マガジン（note）</a>
     <a class="btn" href="https://kasuiehon.pages.dev/">📖 火水絵本</a>
     <a class="btn grey" href="https://sintaichoseijyuku.pages.dev/">心体調整塾ホームページ</a>
-  </section>
-
-    <section class="faq-sec" aria-label="よくある質問">
+  </div></details></section>
+<section class="faq-sec" aria-label="よくある質問">
   <details class="faq-outer">
   <summary>よくある質問</summary>
   <div class="faq-inner">
